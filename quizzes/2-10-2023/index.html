@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-10-2023 | Nathan Kolbas</title>
+  <style>
+    .pageBackground {
+      animation: background-animation 30s linear infinite alternate;
+    }
+
+    @keyframes background-animation {
+      0% {
+        background-color: rgb(255, 153, 153);
+      }
+      25% {
+        background-color: rgb(255, 255, 138);
+      }
+      50% {
+        background-color: rgb(157, 157, 255);
+      }
+      75% {
+        background-color: rgb(162, 255, 162);
+      }
+      90% {
+        background-color: rgb(241, 131, 255);
+      }
+      100% {
+        background-color: rgb(255, 149, 149);
+      }
+    }
+
+    #title {
+      font-family: "Hiragino Maru Gothic ProN", "Comic Sans", cursive;
+      animation: animated-background-crazy 1s linear infinite alternate;
+    }
+
+    @keyframes animated-background-crazy {
+      0% {
+        background-color: rgb(171, 22, 22);
+      }
+      25% {
+        background-color: rgb(133, 133, 32);
+      }
+      50% {
+        background-color: rgb(40, 40, 204);
+      }
+      75% {
+        background-color: rgb(26, 236, 26);
+      }
+      90% {
+        background-color: rgb(126, 34, 138);
+      }
+      100% {
+        background-color: rgb(124, 12, 12);
+      }
+    }
+
+    #paragraph {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    .list {
+      font-style: italic;
+      font-size: x-large;
+      font-family: "Big Caslon", "Comic Sans", cursive;
+    }
+
+    #special {
+      font-weight: bolder;
+      font-style: normal;
+      font-size: 5px;
+      color: darkred;
+      font-family: "Arial", serif;
+    }
+
+    fieldset {
+      border-color: wheat;
+      border-style: wave;
+      animation: animated-border 1s linear infinite alternate;
+    }
+
+    @keyframes animated-border {
+      0% {
+        border-color: rgb(171, 22, 22);
+      }
+      25% {
+        border-color: rgb(133, 133, 32);
+      }
+      50% {
+        border-color: rgb(40, 40, 204);
+      }
+      75% {
+        border-color: rgb(26, 236, 26);
+      }
+      90% {
+        border-color: rgb(126, 34, 138);
+      }
+      100% {
+        border-color: rgb(124, 12, 12);
+      }
+    }
+
+    #fine-print {
+      font-style: italic;
+      font-size: xx-small;
+    }
+  </style>
+</head>
+<body class="pageBackground">
+<h1 id="title">Welcome to the crazy amazing super duper awesome survey!</h1>
+<p id="paragraph">Today is the day to fill out this crazy amazing super duper awesome survey and watch as all your problems disappear! It can solve things like:</p>
+<ul class="list">
+  <li>World hunger</li>
+  <li>Bring world piece</li>
+  <li>Infinite renewable energy</li>
+  <li id="special">STOP THE SOCIOLOGICAL AND FINANCIAL IMPACT OF LEGALIZING NUCLEAR BOMBS</li>
+  <li>Long life</li>
+  <li>Energize your body</li>
+  <li>And many more!</li>
+</ul>
+<form>
+  <fieldset>
+    <legend>Survey</legend>
+    <table>
+      <tr>
+        <td>
+          <label>Name:</label>
+          <input type="text"/>
+          <label>Suffix:</label>
+          <select id="suffix" name="suffix">
+            <option value="Sr">Sr</option>
+            <option value="Jr">Jr</option>
+            <option value="Prof">Prof</option>
+            <option value="Dr">Dr</option>
+            <option value="Mr">Mr</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Any other info:</label>
+          <input type="text"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Please enter today's date</label>
+          <input type="date"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Please check here if you want to receive updates</label>
+          <input type="checkbox" name="wantUpdates">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button>Submit</button>
+          <button>Reset</button>
+        </td>
+      </tr>
+    </table>
+  </fieldset>
+</form>
+<p id="fine-print">Please allow for 5 business days for the affects to take place :)</p>
+</body>
+</html>
