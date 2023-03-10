@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- SCA Logo -->
+  <link rel="icon" href="../assets/remoteControllerIcon.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../css/mdb.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+<body>
+
+<header style="position: absolute; right: 0">
+  <div style="display: flex; justify-content: flex-end;">
+    <a href="#" id="toggleTheme" onclick="toggleTheme()" class="btn z-depth-0 p-2">
+      <div>
+        <i id="toggleThemeIcon" class="fas fa-moon fa-lg"></i>
+        <p class="m-0">Theme</p>
+      </div>
+    </a>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <h3>Simply Complex Apps</h3>
+
+  <div class="card p-4" style="border-radius: 16px">
+    <form id="contactForm">
+
+      <div class="col">
+        <div>
+          <div class="md-form mb-0">
+            <input type="email" id="email" name="Email" class="form-color form-control">
+            <label for="email" id="loginEmail" class="form-label-color">Email</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="md-form mb-0">
+            <input type="password" id="password" name="Password" class="form-color form-control">
+            <label for="password" id="loginPassword" class="form-label-color">Password</label>
+          </div>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="text-center">
+      <a id="loginButton" class="btn btn-md" onclick="" style="background-color: #2196f3; border-radius: 4px">Login</a>
+    </div>
+  </div>
+</main>
+
+<!-- jQuery -->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- My script -->
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

@@ -43,15 +43,17 @@
         </ul>
         <!-- Social Icon  -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a class="nav-link" href="https://twitter.com/SimplyComplexAp">
-              <i class="fab fa-twitter"></i>
+          <li class="nav-item dropdown-user">
+            <a class="nav-link dropdown-user-icon" href="https://www.instagram.com/simplycomplexapps/">
+              <i class="fas fa-user-circle fa-lg"></i>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.instagram.com/simplycomplexapps/">
-              <i class="fab fa-instagram"></i>
-            </a>
+            <div class="dropdown-user-menu">
+              <ul class="dropdown-user-menu-items">
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Login</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
@@ -131,7 +133,7 @@
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input type="text" id="contactEmail" name="email" class="form-color form-control">
-                    <label for="contact-email" id="contactEmailLabel" class="form-label-color">Your email</label>
+                    <label for="contactEmail" id="contactEmailLabel" class="form-label-color">Your email</label>
                   </div>
                 </div>
                 <!-- Grid column -->
@@ -139,7 +141,7 @@
                 <div class="col-md-6">
                   <div class="md-form mb-0">
                     <input type="text" id="contactSubject" name="subject" class="form-color form-control">
-                    <label for="contact-Subject" id="contactSubjectLabel" class="form-label-color">Subject</label>
+                    <label for="contactSubject" id="contactSubjectLabel" class="form-label-color">Subject</label>
                   </div>
                 </div>
                 <!-- Grid column -->
@@ -153,7 +155,7 @@
                 <div class="col-md-12">
                   <div class="md-form">
                     <textarea type="text" id="contactMessage" name="message" class="form-color form-control md-textarea" rows="3"></textarea>
-                    <label for="contact-message" id="contactMessageLabel" class="form-label-color">Your message</label>
+                    <label for="contactMessage" id="contactMessageLabel" class="form-label-color">Your message</label>
 
                     <span id="oneStar" class="fa fa-star checked"></span>
                     <span id="twoStar" class="fa fa-star checked"></span>
