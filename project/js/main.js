@@ -41,6 +41,61 @@ $(document).ready(function () {
         contactResetColorAndText(id);
     });
 
+    // Screenshots section
+    var view = $("#screenshots-show");
+    var move = $("#carousel-first-item").outerWidth(true); // Gets the width and margin of the first image
+    var sliderLimit = -move * ($('.carousel-items').length - 1); // Move is the width of each image then we multiple by the number of images
+
+    $("#rightArrow").click(function() {
+        carouselLeft()
+    });
+
+    $("#leftArrow").click(function() {
+        carouselRight()
+    });
+
+    function carouselLeft() {
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition > sliderLimit) view.stop(false,true).animate({left:"-="+move+"px"},{ duration: 400})
+    }
+
+    function carouselRight() {
+        var currentPosition = parseInt(view.css("left"));
+        if (currentPosition <= -move) view.stop(false,true).animate({left:"+="+move+"px"},{ duration: 400})
+    }
+
+    // Adding touch swipes for carousel
+    var carouselWindow = document.getElementById('screenshots-window');
+    var carouselHammer = new Hammer(carouselWindow);
+    carouselHammer.on("swipeleft", function() {
+        carouselLeft();
+    });
+
+    carouselHammer.on("swiperight", function() {
+        carouselRight();
+    });
+
+    // Lightbox options
+    lightbox.option({
+        'albumLabel': "Screenshot %1 of %2",
+        'disableScrolling': true,
+        'fadeDuration': 300,
+        'imageFadeDuration': 300,
+        'resizeDuration': 0
+    })
+
+    // Adding touch swipes for lightbox
+    var lightboxContainer = lightbox.$container[0];
+    var lightboxHammer = new Hammer(lightboxContainer);
+    lightboxHammer.on("swipeleft", function() {
+        document.getElementsByClassName('lb-next')[0].click()
+    });
+
+    lightboxHammer.on("swiperight", function() {
+        document.getElementsByClassName('lb-prev')[0].click()
+    });
+    // END Screenshots section
+
     // Staring
     var oneStar = document.getElementById('oneStar');
     var twoStar = document.getElementById('twoStar');

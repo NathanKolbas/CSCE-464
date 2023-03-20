@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
   <!-- Custom styles -->
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -36,6 +38,15 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#screenshots">Screenshots</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#vote">Vote</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#beta">Beta</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -69,7 +80,7 @@
           <div class="intro-section">
             <!--Icon image-->
             <div class="view overlay rounded-circle z-depth-2 remote-controller-icon">
-              <img class="img-fluid remote-controller-icon-image" alt="Remote Controller" src="assets/remoteControllerIcon.png">
+              <img class="img-fluid remote-controller-icon-image" alt="Remote Controller" src="./assets/Icon9.png">
               <a href="https://play.google.com/store/apps/developer?id=Simply+Complex+Apps">
                 <div class="mask waves-effect rgba-white-slight"></div>
               </a>
@@ -77,11 +88,12 @@
             <!--Grid column-->
             <div class="mb-4 white-text">
               <h1 class="font-weight-bold white-text mb-0 pt-4" style="font-family: 'Roboto';" id="title">Remote Controller</h1>
-              <hr class="hr-light my-4 w-100">
+              <hr class="hr-light my-4 w-100 intro-line">
               <h6 class="subtext-header mt-3 mb-4">
-                Remote Controller allows you to use your phone as a controller!
+                Remote Controller allows you to use your phone as a controller! Play multiplayer games with friends without needing multiple
+                controllers.
               </h6>
-              <a href="https://play.google.com/store/apps/developer?id=Simply+Complex+Apps" class="btn z-depth-2" style="margin: 0;"><i class="fab fa-google-play mr-2"></i>App Store</a>
+              <a href="#beta" class="btn z-depth-2" style="margin: 0;">Sign-up for Beta</a>
             </div>
             <!--Grid column-->
           </div>
@@ -96,6 +108,214 @@
 
   <!--Main layout-->
   <main>
+    <!--Section: about-->
+    <section id="about" class="py-5 hideme about-section">
+
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">About</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto">
+          Remote Controller allows you to use your phone as a controller
+        </p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-5 about-image-container">
+            <img class="img-fluid about-image" src="./assets/Icon15.png" alt="Sample image" width="150" height="150">
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-7">
+
+            <!-- Grid row -->
+            <div class="row mb-3">
+
+              <!-- Grid column -->
+              <div class="col-1">
+                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">Main features</h5>
+                <ul class="grey-text">
+                  <li>
+                    Extremely low latency connection without lag
+                  </li>
+                  <li>
+                    Fully customizable layouts to fit your style, game, or layout
+                  </li>
+                  <li>
+                    Easy connections without needing to follow a completed setup
+                  </li>
+                </ul>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            <!--Grid row-->
+            <div class="row">
+
+              <!-- Grid column -->
+              <div class="col-1">
+                <i class="fa fa-mail-forward fa-lg purple-text"></i>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-xl-10 col-md-11 col-10">
+                <h5 class="font-weight-bold mb-3">Privacy</h5>
+                <p class="grey-text mb-0">No one wants their personal data siphoned and retained without
+                  their knowledge. This is why Simply Complex Apps takes your privacy very seriously
+                  and is very open about its privacy policy. Each permission that Tell Me uses is
+                  explained in detail
+                  <a href="./privacy-policy">here</a>.
+                  As always, if you ever have any questions or concerns please feel free to reach out
+                  using the contact section below or by email.</p>
+              </div>
+              <!-- Grid column -->
+
+            </div>
+            <!--Grid row-->
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: about-->
+
+    <!--Section: screenshots-->
+    <section id="screenshots" class="py-5 hideme screenshots-section">
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Screenshots</h2>
+        <!-- Carousel -->
+        <div class="carousel-align-center">
+          <div class="row" style="margin: 0 auto;">
+            <a id="leftArrow" class="carousel-buttons">
+              <i class="fas fa-angle-left"></i>
+            </a>
+            <div id="screenshots-window">
+              <div id="screenshots-show">
+                <div id="carousel-first-item" class="carousel-items view overlay z-depth-1">
+                  <a href="./assets/Screenshot1.jpg" data-lightbox="photos">
+                    <img class="img-fluid" src="./assets/Screenshot1.jpg">
+                    <div class="screenshot-click screenshot-click mask waves-effect waves-light rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="carousel-items view overlay z-depth-1">
+                  <a href="./assets/Screenshot2.jpg" data-lightbox="photos">
+                    <img class="img-fluid" src="./assets/Screenshot2.jpg">
+                    <div class="screenshot-click mask waves-effect waves-light rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="carousel-items view overlay z-depth-1">
+                  <a href="./assets/Screenshot3.jpg" data-lightbox="photos">
+                    <img class="img-fluid" src="./assets/Screenshot3.jpg">
+                    <div class="screenshot-click mask waves-effect waves-light rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="carousel-items view overlay z-depth-1">
+                  <a href="./assets/Screenshot4.jpg" data-lightbox="photos">
+                    <img class="img-fluid" src="./assets/Screenshot4.jpg">
+                    <div class="screenshot-click mask waves-effect waves-light rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a id="rightArrow" class="carousel-buttons">
+              <i class="fas fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Carousel -->
+      </div>
+      <!-- Container -->
+    </section>
+    <!--Section: screenshots-->
+
+    <!--Section: Vote-->
+    <section id="vote" class="py-5 hideme vote-section">
+
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Vote</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto">
+          Vote for your favorite icon
+        </p>
+
+        <div class="strawpoll-embed" id="strawpoll_QrgebP4bYZp" style="height: 772px; width: 100%; margin: 0 auto; display: flex; flex-direction: column;">
+          <iframe title="StrawPoll Embed" id="strawpoll_iframe_QrgebP4bYZp" src="https://strawpoll.com/embed/polls/QrgebP4bYZp" style="position: static; visibility: visible; display: block; width: 100%; flex-grow: 1;" frameborder="0" allowfullscreen allowtransparency>Loading...</iframe>
+          <script async src="https://cdn.strawpoll.com/dist/widgets.js" charset="utf-8"></script>
+        </div>
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: Vote-->
+
+    <!--Section: Beta-->
+    <section id="beta" class="py-5 hideme beta-section">
+
+      <!-- Container -->
+      <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Beta</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto">
+          Sign-up for the beta by Entering your email below! You will be notified once a spot is available.
+        </p>
+
+        <div class="align-content-center" id="betaContainer">
+          <form id="betaForm">
+            <div class="beta-email-container">
+              <div class="md-form">
+                <input type="text" id="betaEmail" name="email" class="form-color form-control">
+                <label for="betaEmail" id="betaEmailLabel" class="form-label-color">Your email</label>
+              </div>
+
+              <div class="md-form">
+                <div id="recaptchaBetaContainer" style="display: none;">
+                  <span style="color: red;">Please complete reCAPTCHA.</span>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LfllQEVAAAAABq-CrZcXY3LET4gmQ42DZ_XXsB0" data-callback="recaptchaCallbackBeta" data-expired-callback="recaptchaCallbackBeta"></div>
+              </div>
+            </div>
+          </form>
+
+          <div class="text-center">
+            <a id="sendBetaFormButton" class="btn btn-md" onclick="validateBetaForm()" style="background-color: var(--main-color)">Send</a>
+          </div>
+        </div>
+
+        <div class="align-content-center text-center w-responsive mx-auto" id="sentBeta" style="visibility: hidden; opacity: 0; padding: 16px 0; display: none;">
+          <h2>You are signed up. Thank you!</h2>
+        </div>
+
+      </div>
+      <!-- Container -->
+
+    </section>
+    <!--Section: Beta-->
+
     <!--Section: contact-->
     <section id="contact" class="py-5 hideme contact-section">
 
@@ -172,7 +392,7 @@
             </form>
 
             <div class="text-center text-md-left">
-              <a id="sendFormButton" class="btn btn-md" onclick="validateForm()" style="background-color: #9c27b0">Send</a>
+              <a id="sendFormButton" class="btn btn-md" onclick="validateForm()" style="background-color: var(--main-color)">Send</a>
             </div>
 
           </div>
@@ -182,7 +402,7 @@
             <ul class="list-unstyled mb-0">
               <li>
                 <div class="flex-center" style="padding-bottom: 10px;">
-                  <div class="view overlay rounded-circle z-depth-2" style="height: 47px; width: 47px; background-color: #9c27b0;">
+                  <div class="view overlay rounded-circle z-depth-2" style="height: 47px; width: 47px; background-color: var(--main-color);">
                     <i class="fa fa-envelope white-text flex-center" style="font-size: 20px;"></i>
                     <a href="mailto: simplycomplexapps@gmail.com">
                       <div class="mask waves-effect rgba-white-slight"></div>
@@ -250,6 +470,10 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Particles JS library -->
   <script src="js/particles.min.js"></script>
+  <!-- Lightbox JS -->
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <!-- Hammer JS -->
+  <script type="text/javascript" src="js/hammer.min.js"></script>
   <!-- My script -->
   <script type="text/javascript" src="js/main.js"></script>
 </body>

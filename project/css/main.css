@@ -1,5 +1,5 @@
 :root {
-    --main-color: #9c27b0;
+    --main-color: #976ff5;
 }
 
 html,
@@ -179,6 +179,134 @@ canvas {
 .hideme {
     opacity: 0;
 }
+
+/* About section */
+.about-image-container {
+    text-align: end;
+}
+
+.about-image {
+    padding: 50px 8px;
+    transform: scaleX(-1);
+}
+
+@media (max-width: 991px) {
+    .about-image-container {
+        text-align: center;
+    }
+
+    .about-image {
+        padding: 8px;
+    }
+}
+
+/* Screenshots section */
+.screenshots-section {
+    background-color: #eee;
+}
+
+.carousel-align-center {
+    margin: 0 auto;
+    display: flex;
+}
+
+.carousel-buttons {
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    height: inherit;
+}
+
+#leftArrow {
+    position: relative;
+    left: 0px;
+}
+
+#rightArrow {
+    position: relative;
+    right: 0px;
+}
+
+#screenshots-window {
+    width: 700px;
+    left: 50%;
+    overflow: hidden;
+}
+
+#screenshots-show {
+    display: flex;
+    position: relative;
+    left:0;
+    width: 1200px;
+}
+
+.carousel-items {
+    float: left;
+    margin: 10px 40px 10px 10px;
+    width: 25%;
+}
+
+@media (max-width: 991px) {
+    #screenshots-window {
+        width: 600px;
+        left: 50%;
+        overflow: hidden;
+    }
+
+    .carousel-items {
+        float: left;
+        margin: 10px 40px 10px 10px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 767px) {
+    #screenshots-window {
+        width: 400px;
+        left: 50%;
+        overflow: hidden;
+    }
+
+    .carousel-items {
+        float: left;
+        margin: 10px 40px 10px 10px;
+        width: 20%;
+    }
+}
+
+@media (max-width: 509px) {
+    #screenshots-window {
+        width: 210px;
+        left: 50%;
+        overflow: hidden;
+    }
+
+    .carousel-items {
+        float: left;
+        margin: 10px 40px 10px 10px;
+        width: 15%;
+    }
+}
+/* END Screenshots section */
+
+/* Vote */
+/* END Vote */
+
+/* Beta */
+.beta-section {
+    background-color: #eee;
+}
+
+.beta-email-container {
+    max-width: 300px;
+    margin: auto;
+}
+/* END Beta */
 
 /* Contact section */
 .contact-section {
