@@ -309,8 +309,14 @@ canvas {
 /* END Beta */
 
 /* Contact section */
-.contact-section {
+.articles-section {
     background-color: #fff;
+}
+/* END Contact */
+
+/* Contact section */
+.contact-section {
+    background-color: #eee;
 }
 
 @media (max-width: 1300px) {

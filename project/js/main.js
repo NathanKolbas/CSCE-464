@@ -157,6 +157,23 @@ $(document).ready(function () {
         fourStar.classList.add('checked');
         fiveStar.classList.add('checked');
     });
+
+    // Setup the most recent article
+    getRecentArticle().then(article => {
+        article = JSON.parse(article);
+        let articleCardLink = document.getElementById('articleCardLink');
+        let articleCardTitle = document.getElementById('articleCardTitle');
+        let articleCardDescription = document.getElementById('articleCardDescription');
+        let articleCardCreator = document.getElementById('articleCardCreator');
+        let articleCardDate = document.getElementById('articleCardDate');
+        articleCardLink.href = `./article/index.html?id=${article['id']}`
+        articleCardTitle.innerHTML = article['title'];
+        articleCardDescription.innerHTML = article['description'];
+        articleCardCreator.innerHTML = article['author'];
+
+        const created = new Date(article['created']);
+        articleCardDate.innerHTML = created.toDateString();
+    });
 });
 
 // Scroll animation check. This animates in the section.
@@ -267,3 +284,21 @@ function contactResetColorAndText(id) {
 
 // particlesJS.load(@dom-id, @path-json, @callback (optional));
 particlesJS.load('particles-js', 'assets/particles.json', function () {});
+
+async function getRecentArticle() {
+    httpRequest = new XMLHttpRequest();
+    httpRequest.open("POST", './php/articles.php', false);
+    httpRequest.setRequestHeader("Accept", "application/json");
+    httpRequest.setRequestHeader("Content-Type", "application/json");
+    const body = JSON.stringify({
+        path: '/articles/recent',
+    });
+    await httpRequest.send(body);
+    if (httpRequest.readyState === 4) {
+        console.log(httpRequest.responseText);
+        return httpRequest.responseText;
+    } else {
+        console.log('Empty');
+        return null;
+    }
+}

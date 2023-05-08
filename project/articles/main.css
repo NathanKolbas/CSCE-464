@@ -1,0 +1,97 @@
+html,
+body,
+header,
+#intro {
+    height: 64px;
+
+    /*Fix for scroll bounce on Apple devices*/
+    overscroll-behavior: none;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    #intro-section {
+        height: 64px;
+    }
+}
+
+/* Dropdown */
+.dropdown-user {
+    position: relative;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.dropdown-user:hover > .dropdown-user-icon {
+    /*background-color: white;*/
+    /*border-radius: 4px 4px 0 0;*/
+    /*transition: none;*/
+}
+
+.dropdown-user:hover > .dropdown-user-menu {
+    transform: translateZ(0) scaleY(1);
+    overflow-y: auto;
+    visibility: visible;
+    opacity: 1;
+    animation: show-dropdown .15s cubic-bezier(0,0,.2,1) forwards;
+}
+
+@keyframes show-dropdown {
+    0%{
+        transform: translate3d(0,-8px,0) scaleY(.99);
+    }
+    100%{
+        transform: translateZ(0) scaleY(1);
+    }
+}
+
+.dropdown-user-menu {
+    position: absolute;
+    z-index: 10000;
+    right: 0;
+    width: 200px;
+    transform: translate3d(0,-0.5rem,0) scaleY(0);
+    transform-origin: left top 0;
+    visibility: hidden;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 50%);
+    opacity: .25;
+    transition: background-color 200ms ease;
+}
+
+.dropdown-user-menu-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.dropdown-user-menu > .dropdown-item {
+    padding: 16px 24px;
+    transition: background-color .15s cubic-bezier(.4,0,.2,1);
+}
+
+.dropdown-user-menu > .dropdown-item:hover {
+    background-color: #002c40;
+}
+/* Dropdown End */
+
+.text-black {
+    color: black;
+}
+
+#root {
+    margin: 0 8rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
